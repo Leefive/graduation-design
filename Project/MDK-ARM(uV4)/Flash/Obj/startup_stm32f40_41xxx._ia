@@ -1,0 +1,6 @@
+--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-I.\RTE\_Flash
+-IG:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+-IG:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+--pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1" --pd "STM32F427xx SETA 1"
+--list .\flash\list\startup_stm32f40_41xxx.lst --xref -o .\flash\obj\startup_stm32f40_41xxx.o --depend .\flash\obj\startup_stm32f40_41xxx.d "..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f40_41xxx.s"

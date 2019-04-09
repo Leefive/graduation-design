@@ -1,0 +1,162 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Teng Ciner, dgut, LIC=7YKNN-Y766F-KSYYM-XSL1M-H3ET7-6ZMR8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.25.2.0
+Toolchain Path:  G:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.29.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+D:\毕业设计\代码\毕业设计程序beta\Project\MDK-ARM(uV4)\project.uvprojx
+Project File Date:  04/05/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\Keil_v5\ARM\ARMCC\Bin'
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'Flash'
+compiling main.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\main.c(125): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                        ShowString(30,100,200,24,24,s);  //显示到LCD上
+..\..\User\main.c(130): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                        VoltageRange_error = (float32_t) (target_voltage - Vout);  //算出电压差值
+..\..\User\main.c(137): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                        if(Vout <= 36.5)
+..\..\User\main.c(165): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                        ShowString(30,130,200,24,24,s);  //显示到LCD上
+..\..\User\main.c: 5 warnings, 0 errors
+compiling bsp_key.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\src\bsp_key.c: 1 warning, 0 errors
+compiling bsp_led.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\src\bsp_led.c: 1 warning, 0 errors
+compiling bsp_timer.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\src\bsp_timer.c: 1 warning, 0 errors
+compiling bsp_uart_fifo.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\src\bsp_uart_fifo.c: 1 warning, 0 errors
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_assert.c...
+compiling bsp.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\bsp.c: 1 warning, 0 errors
+compiling bsp_user_lib.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\src\bsp_user_lib.c: 1 warning, 0 errors
+compiling bsp_lcd.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\LCD\bsp_lcd.c: 1 warning, 0 errors
+compiling bsp_modbus.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\src\bsp_modbus.c: 1 warning, 0 errors
+compiling bsp_tim_pwm.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\src\bsp_tim_pwm.c: 1 warning, 0 errors
+compiling bsp_phase_shift.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\phase_shift\bsp_phase_shift.c(12): warning:  #550-D: variable "TIM8_CH2_Pulse"  was set but never used
+        uint32_t TIM8_CH2_Pulse=0,TIM8_CH1_Pulse=0;  //用于存放计算移相后CRR1,CCR2的数值  
+..\..\User\bsp_stm32f4xx\phase_shift\bsp_phase_shift.c: 2 warnings, 0 errors
+compiling bsp_pwminput.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.c(95): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                ShowString(30,130,200,16,16,s1);
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.c(103): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                ShowString(30,150,200,16,16,s2);
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.c(118): warning:  #1-D: last line of file ends without a newline
+        
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.c: 4 warnings, 0 errors
+compiling bsp_adc.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\User\bsp_stm32f4xx\src\bsp_adc.c(119): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                reduction_factor = reduction_factor + 0.05;
+..\..\User\bsp_stm32f4xx\src\bsp_adc.c(121): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                reduction_factor = reduction_factor - 0.05;
+..\..\User\bsp_stm32f4xx\src\bsp_adc.c(116): warning:  #550-D: variable "a"  was set but never used
+        uint16_t a;
+..\..\User\bsp_stm32f4xx\src\bsp_adc.c: 4 warnings, 0 errors
+assembling startup_stm32f40_41xxx.s...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_syscfg.c...
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_dma.c...
+compiling system_stm32f4xx.c...
+compiling usmart.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\USMART\usmart.c: 1 warning, 0 errors
+compiling usmart_config.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\USMART\usmart_config.c: 1 warning, 0 errors
+compiling usmart_str.c...
+..\..\User\bsp_stm32f4xx\PWMInput\bsp_pwminput.h(4): warning:  #1295-D: Deprecated declaration bsp_pwminput_init - give arg types
+  void bsp_pwminput_init();
+..\..\USMART\usmart_str.c: 1 warning, 0 errors
+linking...
+Program Size: Code=20392 RO-data=7224 RW-data=452 ZI-data=10076  
+FromELF: creating hex file...
+After Build - User command #1: CopyHex_Flash.bat
+D:\毕业设计\代码\毕业设计程序beta\Project\MDK-ARM(uV4)>copy Flash\Obj\output.hex ..\output(mdk).hex 
+已复制         1 个文件。
+".\Flash\Obj\output.axf" - 0 Error(s), 27 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Flash
+  G:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  G:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:33
+</pre>
+</body>
+</html>

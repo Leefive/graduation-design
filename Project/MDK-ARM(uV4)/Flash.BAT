@@ -1,0 +1,37 @@
+SET PATH=G:\Keil_v5\ARM\ARMCC\Bin;c:\program files (x86)\common files\oracle\java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Windows\system32\windowspowershell\v1.0\;C:\Windows\system32\openssh\;G:\Matlab7.1\bin\win32;G:\Matlab2015b\runtime\win64;G:\Matlab2015b\bin;G:\Matlab2015b\polyspace\bin;G:\Microsoft VS Code\bin;C:\Users\Ciner\AppData\Local\Microsoft\WindowsApps;;G:\Microsoft VS Code\bin
+SET CPU_TYPE=STM32F427VITx
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=Flash
+SET CPU_CLOCK=0x00B71B00
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\main.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_key.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_led.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_timer.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_uart_fifo.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_it.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_assert.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_user_lib.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_lcd.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_modbus.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_tim_pwm.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_phase_shift.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_pwminput.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\bsp_adc.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmAsm" --Via ".\flash\obj\startup_stm32f40_41xxx._ia"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_tim.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_rcc.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_syscfg.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\misc.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_gpio.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_usart.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_fsmc.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_adc.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\stm32f4xx_dma.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\system_stm32f4xx.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\usmart.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\usmart_config.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\obj\usmart_str.__i"
+"G:\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via ".\Flash\Obj\output.lnp"
+"G:\Keil_v5\ARM\ARMCC\Bin\fromelf.exe" ".\Flash\Obj\output.axf" --i32combined --output ".\Flash\Obj\output.hex"
+CopyHex_Flash.bat
