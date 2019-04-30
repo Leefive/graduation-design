@@ -98,7 +98,7 @@ void bsp_phase_shift_init(uint16_t frequency,uint16_t phase_shift_duty_cycle)
     TIM_BDTRInitStructure.TIM_AutomaticOutput=TIM_AutomaticOutput_Disable;   //关闭自动使能输出，MOE只能由软件置1 BDTR->AOE=0
     TIM_BDTRInitStructure.TIM_Break=TIM_Break_Disable;                       //禁止短路输入  BDTE->BKE=0
     TIM_BDTRInitStructure.TIM_BreakPolarity=TIM_BreakPolarity_High;
-    TIM_BDTRInitStructure.TIM_DeadTime=80;// DT*(1/168M)     死区时间       BDTR->DGT=TIM_DeadTime
+    TIM_BDTRInitStructure.TIM_DeadTime=150;// DT*(1/168M)     死区时间       BDTR->DGT=TIM_DeadTime
 	TIM_BDTRInitStructure.TIM_LOCKLevel=TIM_LOCKLevel_OFF;   // 关闭锁定
     TIM_BDTRInitStructure.TIM_OSSIState=TIM_OSSIState_Enable;   //空闲模式下的关闭状态选择写1
     TIM_BDTRInitStructure.TIM_OSSRState=TIM_OSSRState_Enable;   //运行模式下的关闭状态选择写1

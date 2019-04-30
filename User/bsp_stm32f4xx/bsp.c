@@ -43,7 +43,7 @@ void bsp_Init(void)
 	
 	usmart_dev.init(84); 	//≥ı ºªØUSMART
 	
-	bsp_phase_shift_init(20000,100);
+	bsp_phase_shift_init(20000,100);  
 
 //	bsp_SetTIMOutPWM(GPIOA,GPIO_Pin_5,TIM2,1,5000,3700);
 //	

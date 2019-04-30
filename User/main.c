@@ -63,7 +63,8 @@ int main(void)
 	arm_abs_f32(&v1,&v1,1); 
 	
 	printf("\n\r V1 = %f \n\r",v1);
-	
+
+
 	/* 进入主程序循环体 */
 	while (1)
 	{
@@ -99,7 +100,7 @@ int main(void)
 			phase_shift_duty_cycle = phase_shift_duty_cycle + out;   //在原来的基础上加上增量
 			
 			//限幅
-			if(Vout <= 36.5)
+			if(Vout <= 5.5)
 			{
 				if(phase_shift_duty_cycle >= 200)
 				{
@@ -112,9 +113,9 @@ int main(void)
 		    }
 			else
 			{
-				if(phase_shift_duty_cycle >= 500)
+				if(phase_shift_duty_cycle >= 450)
 				{
-					phase_shift_duty_cycle = 500;
+					phase_shift_duty_cycle = 450;
 				}
 				if(phase_shift_duty_cycle <= 30)
 				{
